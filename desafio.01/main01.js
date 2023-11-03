@@ -34,7 +34,7 @@ class ProductManager {
       const product = this.products.find(product => product.id === id);
   
       if (!product) {
-        console.error("Producto no encontrado");
+        console.error("Not found");
       } else {
         return product;
       }
@@ -47,7 +47,7 @@ class ProductManager {
   productManager.addProduct({
     title: "Producto 1",
     description: "Descripción del Producto 1",
-    price: 19.99,
+    price: 1000,
     thumbnail: "path/to/thumbnail1.jpg",
     code: "P001",
     stock: 50,
@@ -56,7 +56,7 @@ class ProductManager {
   productManager.addProduct({
     title: "Producto 2",
     description: "Descripción del Producto 2",
-    price: 29.99,
+    price: 1500,
     thumbnail: "path/to/thumbnail2.jpg",
     code: "P002",
     stock: 30,
